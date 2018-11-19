@@ -171,6 +171,10 @@
  //#define JUCE_USE_XCURSOR 1
 #endif
 
+#ifndef    JUCE_WIN_PER_MONITOR_DPI_AWARE
+ //#define JUCE_WIN_PER_MONITOR_DPI_AWARE 1
+#endif
+
 //==============================================================================
 // juce_gui_extra flags:
 
@@ -181,6 +185,7 @@
 #ifndef    JUCE_ENABLE_LIVE_CONSTANT_EDITOR
  //#define JUCE_ENABLE_LIVE_CONSTANT_EDITOR 0
 #endif
+
 //==============================================================================
 #ifndef    JUCE_STANDALONE_APPLICATION
  #if defined(JucePlugin_Name) && defined(JucePlugin_Build_Standalone)
